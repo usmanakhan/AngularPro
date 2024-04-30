@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FavoriteObj } from './favorite/favorite.component';
+
 
 @Component({
   selector: 'app-root',
@@ -8,4 +10,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'myApp';
   simpleText:string = '';
+  post = {
+    title: 'Title',
+    isFavorite: true
+  }
+
+  onFavoriteChange(isFavorite:FavoriteObj){
+    console.log("Favorite Change ", isFavorite.newVal)
+  }
 }
