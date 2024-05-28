@@ -9,6 +9,8 @@ import { CoursesService } from './courses.service';
 import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { FormatTextPipe } from './format-text.pipe';
+import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormatTextPipe } from './format-text.pipe';
     CoursesComponent,
     SummaryPipe,
     FavoriteComponent,
-    FormatTextPipe
+    FormatTextPipe,
+    PanelComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

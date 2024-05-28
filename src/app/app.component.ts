@@ -18,4 +18,11 @@ export class AppComponent {
   onFavoriteChange(isFavorite:FavoriteObj){
     console.log("Favorite Change ", isFavorite.newVal)
   }
+
+  /*--like component--*/
+  tweet = {
+    body:"body of tweet",
+    likesCount:0,
+    isLiked:false
+  }
 }

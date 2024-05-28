@@ -9,3 +9,12 @@
 <br>
 {{simpleText | formatText}} -->
 <app-favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChange($event)"></app-favorite>
+<bootstrap-panel>
+  <ng-container class="heading">Heading</ng-container>
+  <div class="body">
+    <h3>body text</h3>
+    <p>some content</p>
+  </div>
+
+</bootstrap-panel>
+<app-like [likesCount]="tweet.likesCount" [isActive]="tweet.isLiked"></app-like>
