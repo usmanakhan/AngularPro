@@ -25,4 +25,10 @@ export class AppComponent {
     likesCount:0,
     isLiked:false
   }
+
+  /*--ngIf--*/
+  courses = [1,2];
+
+  /*--ngSwitch--*/
+  viewMode = 'map';
 }

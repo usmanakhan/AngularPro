@@ -9,6 +9,9 @@
 <br>
 {{simpleText | formatText}} -->
 <app-favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChange($event)"></app-favorite>
+<br>
+<hr>
+<br>
 <bootstrap-panel>
   <ng-container class="heading">Heading</ng-container>
   <div class="body">
@@ -17,4 +20,33 @@
   </div>
 
 </bootstrap-panel>
+<br>
+<hr>
+<br>
 <app-like [likesCount]="tweet.likesCount" [isActive]="tweet.isLiked"></app-like>
+<br>
+<hr>
+<br>
+<!--ng if-->
+<h3>ng if</h3>
+<div *ngIf="courses.length >= 1; then courseTemp else nocourseTemp">
+  
+</div>
+<ng-template #courseTemp><div>list of courses</div></ng-template>
+<ng-template #nocourseTemp><div>no course yet</div></ng-template>
+<br>
+<hr>
+<br>
+<!--ng switch-->
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Map view</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">List view</a>
+  </li>
+</ul>
+<div ng-switch="">
+  <div>Map View</div>
+  <div>List View</div>
+</div>
