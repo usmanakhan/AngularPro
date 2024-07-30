@@ -11,6 +11,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { FormatTextPipe } from './format-text.pipe';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
+import { InputNumberFormatDirective } from './input-number-format.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LikeComponent } from './like/like.component';
     FavoriteComponent,
     FormatTextPipe,
     PanelComponent,
-    LikeComponent
+    LikeComponent,
+    InputNumberFormatDirective
   ],
   imports: [
     BrowserModule,

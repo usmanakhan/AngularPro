@@ -60,3 +60,8 @@
     {{i}}-{{course.name}}<span *ngIf="isEven">(even)</span><button class="btn" (click)="onRemove(course)">remove</button>
   </li>
 </ul>
+<hr>
+<!-- Custom Directive -->
+<h3>ng For Courses list</h3>
+<input type="text" [appInputNumberFormat]="'uppercase'">
+<br><br><br><br><br>
