@@ -12,6 +12,7 @@ import { FormatTextPipe } from './format-text.pipe';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
 import { InputNumberFormatDirective } from './input-number-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { InputNumberFormatDirective } from './input-number-format.directive';
     FormatTextPipe,
     PanelComponent,
     LikeComponent,
-    InputNumberFormatDirective
+    InputNumberFormatDirective,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,
