@@ -1,6 +1,0 @@
-<p>favorite works!</p>
-<!--class property binding-->
-<i class="bi bi-star"[class.bi-star]="!isFavorite" 
-[class.bi-star-fill]="isFavorite" (click)="onClick()" ></i>
-<!--ngClass binding-->
-<i class="bi bi-star" [ngClass]="{'bi-star':!isFavorite, 'bi-star-fill': isFavorite}" (click)="onClick()" ></i>
